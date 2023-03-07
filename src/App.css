@@ -1,0 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+.bubble-container {
+	height: 80vh;
+	width: 100vw;
+	background-color: #191819;
+	margin-top: 10vh;
+}
