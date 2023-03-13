@@ -1,15 +1,28 @@
+import React from 'react';
 import './bubble.css';
+import Tooltip from "./components/Tooltip/Tooltip"
+function Bubble({ left, top, content, updateItems, type, activeBubble, setActiveBubble, fade, skills }) {
+	const [show, setShow] = React.useState(false)
 
-function Bubble({ left, top, content, updateItems, type }) {
+	React.useEffect(() => setShow(activeBubble === content), [activeBubble, content])
+
+
 	return (
-		<div style={type === 'back?'? {}: { left, top}}
+		<div style={
+			type === 'back?' ? {} : { left, top }
+		}
 
-			className={`${type === 'back' ? 'back-bubble' : ''} bubble  fade-in-animation`}
+		
+		className={`${type === 'back' ? 'back-bubble' : ''} bubble  fade-in-animation ${activeBubble?(activeBubble === content ? '' : 'blur'):null} ${fade?'fade-out-animation':null}}`}
+			onMouseOver={() => setActiveBubble(content)}
+			onMouseOut={() => setActiveBubble(null)}
 
 
 			onClick={() => updateItems(content)}>
 			{
-				content
+				<a href="https://google.com">
+					{content}
+				</a>
 			}
 			{type === 'back'?<button
 				style={{
@@ -25,12 +38,13 @@ function Bubble({ left, top, content, updateItems, type }) {
 
 				}}
 			>
-				<p style={{
+				<p  style={{
 					color: 'white',
 				}}>
 					{"<"}
 				</p>
-			</button>:null}
+			</button> : null}
+			<Tooltip skills={skills} show={show} />
 		</div>
 	);
 }

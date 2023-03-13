@@ -1,7 +1,6 @@
 import "./Status.css"
 
 const Status = ({ status }) => {
-	console.log(status)
 	return (
 		<div className="status">
 			<div className="grid-item">

@@ -31,9 +31,6 @@
 
 @keyframes fadeIn {
 	0% {
-		top: 50%;
-		left: 50%;
-		translate: transform(-50%, -50%);
 		transform: scale(0.5, 0.5)
 	}
 
@@ -42,6 +39,23 @@
 		transform: scale(1, 1)
 	}
 }
+
+.fade-out-animation {
+	animation: fadeIn 3s;
+}
+
+@keyframes fadeOut {
+	0% {
+		transform: scale(1, 1)
+	}
+
+
+	100% {
+		transform: scale(1.2, 1.2)
+	}
+}
+
+
 
 @media screen and (min-width: 1600px) {
 	.bubble {
@@ -54,10 +68,6 @@
 	transform: scale(1.1);
 	outline: 2px dashed green;
 	outline-offset: 5px;
-}
-
-.bubble:hover~.bubble {
-	filter: blur(10px);
 }
 
 .back-bubble {
@@ -74,10 +84,14 @@
 	line-height: 21.8px;
 	font-weight: 600;
 	overflow: hidden;
-	z-index: 1;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	transition: all 0.3s ease;
 }
+
+.blur {
+	filter: blur(3px);
+}
+

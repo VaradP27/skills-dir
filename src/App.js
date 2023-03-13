@@ -3,15 +3,21 @@ import Bubble from './bubble.js';
 import React, { Suspense, useEffect } from 'react';
 import positions from "./positions.json"
 import Status from './components/Status/Status';
+import ReactDOM from 'react-dom'
 
 function App() {
-
+	const skillList = ["Communication", "Programming", "DSA"]
 	const [i, setI] = React.useState(0);
-
+	const [activeBubble, setActiveBubble] = React.useState(null);
+	const [fade, setFade] = React.useState(false)
+	const [skills, setSkills] = React.useState(null)
 	const goBack = () => {
+		setActiveBubble(null)
+		setIteamList([])
 		setSelected(null)
 		setItemPositions(positions)
-		setIteamList(list)
+		setTimeout(() => setIteamList(list), 100)
+		setSkills(null)
 	}
 
 	const list = [
@@ -36,25 +42,22 @@ function App() {
 	]
 
 	const [itemList, setIteamList] = React.useState(list);
-	// const [itemPosistions, setItemPositions] = React.useState(positions.map(value => ({ value, sort: Math.random() }))
-	// 	.sort((a, b) => a.sort - b.sort)
-	// 	.map(({ value }) => value));
 	const [itemPosistions, setItemPositions] = React.useState(positions)
 	const updateItems = (content) => {
+		setActiveBubble(null)
+		setIteamList([])
+		setSkills([...skillList])
 		setItemPositions(positions.map(value => ({ value, sort: Math.random() }))
 		.sort((a, b) => a.sort - b.sort)
 		.map(({ value }) => value))
 		setSelected(content)
 		setIteamList(list1)
 		setI(i + 1)
+		setFade(true)
 	}
 
-	useEffect(() => {
-		console.log(selected)
-	}, [selected])
 
-
-	return (
+	return ReactDOM.createPortal (
 		<div>
 			<div key={i} className="bubble-container" >
 				<Suspense fallback={<div>Loading...</div>}>
@@ -76,14 +79,20 @@ function App() {
 						// 	)
 						// })
 						itemList.map((item, index) => {
+							const zIndex = list.length - index;
 							return (
 								<Bubble
+									fade={fade}
 									className="fade-in-animation"
 									key={index}
 									left={itemPosistions[index].left}
 									top={itemPosistions[index].top}
 									updateItems={updateItems}
 									content={item}
+									style={{ zIndex: zIndex }}
+									activeBubble={activeBubble}
+									setActiveBubble={setActiveBubble}
+									skills={skills}
 									/>
 							)
 						})
@@ -96,61 +105,6 @@ function App() {
 						content={selected}
 						type="back"
 					/>:null}
-					{/* {selected ?
-						<div
-							style={{
-								position: "absolute",
-								height: "690px",
-								width: "690px",
-								backgroundColor: "red",
-								top: "30vh",
-								left: "0.5vw",
-								borderRadius: "50%",
-								fontSize: "16px",
-								color: "#E8FEED",
-								textAlign: "center",
-								backgroundColor: "#202020",
-								fontFamily: "'Open Sans', sans-serif",
-								lineHeight: "21.8px",
-								fontWeight: "600",
-								overflow: "hidden",
-								zIndex: "1",
-							}}
-						>
-							<div
-								style={{
-									position: 'absolute',
-									top: '50%',
-									left: '50%',
-									transform: 'translate(-50%, -50%)'
-								}}
-								onClick={goBack}
-							>
-								<p>
-									{selected}
-								</p>
-								<button
-									style={{
-										height: '52px',
-										width: '52px',
-										textAlign: 'center',
-										margin: '10px',
-										border: '1px solid white',
-										backgroundColor: '#4E4E4E',
-										borderRadius: '50%',
-										color: 'grey'
-
-									}}
-								>
-									<p style={{
-										color: 'white',
-									}}>
-										{"<"}
-									</p>
-								</button>
-							</div>
-						</div> : null
-					} */}
 				</Suspense>
 			</div>
 			<code
@@ -164,7 +118,8 @@ function App() {
 					}
 				}
 			>{selected}</code>
-		</div>
+		</div>,
+		document.getElementById('portal')
 	);
 }
 
