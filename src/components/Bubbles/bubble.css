@@ -6,7 +6,7 @@
 	width: 150px;
 	border-radius: 50%;
 	transition: all 0.3s ease;
-	font-size: 16px;
+	font-size: 14px;
 	color: #E8FEED;
 	text-align: center;
 	display: flex;
@@ -59,15 +59,22 @@
 
 @media screen and (min-width: 1600px) {
 	.bubble {
-		width: 150px;
-		height: 150px
+		width: 160px;
+		height: 160px
 	}
 }
 
 .bubble:hover {
+	cursor: pointer;
 	transform: scale(1.1);
 	outline: 2px dashed green;
 	outline-offset: 5px;
+	z-index: 10 !important;
+	font-size: 16px;
+}
+
+.back-bubble:hover{
+	z-index: 0 !important;
 }
 
 .back-bubble {
@@ -89,9 +96,22 @@
 	justify-content: center;
 	align-items: center;
 	transition: all 0.3s ease;
+	z-index: 0 !important;
 }
 
 .blur {
-	filter: blur(3px);
+	filter: blur(0px);
+}
+
+.back-button {
+	height: 52px;
+			width: 52px;
+			text-align: center;
+			margin: 10px;
+			border: 1px solid white;
+			background-color: #4E4E4E;
+			border-radius: 50%;
+			color: grey;
+			margin-top: 30px;
 }
 

@@ -1,0 +1,987 @@
+[
+	{
+		"name": "Web Development",
+		"type": "Job Family",
+		"children": "Role Clusters",
+		"data": [
+			{
+				"name": "Back-End",
+				"type": "Role Cluster",
+				"children": "Roles",
+				"data": [
+					{
+						"name": "Back-End Developer",
+						"children": "Skills",
+						"data": [
+							"Problem Solving (Basic)",
+							"REST API (Intermediate)",
+							"SQL (Intermediate)",
+							"System Design",
+							"Code Quality",
+							"Technical Communication"
+						]
+					},
+					{
+						"name": "Back-End Developer (.NET)",
+						"children": "Skills",
+						"data": [
+							"Problem Solving (Basic)",
+							"REST API (Intermediate)",
+							"SQL (Intermediate)",
+							"System Design",
+							"Code Quality",
+							"Technical Communication",
+							".NET (Basic)",
+							"C# (Basic)"
+						]
+					},
+					{
+						"name": "Back-End Developer (Django)",
+						"children": "Skills",
+						"data": [
+							"Problem Solving (Basic)",
+							"Django (Basic)",
+							"Python (Basic)",
+							"REST API (Intermediate)",
+							"SQL (Basic)",
+							"Code Quality ",
+							"System Design ",
+							"Technical Communication "
+						]
+					},
+					{
+						"name": "Back-End Developer (Laravel)",
+						"children": "Skills",
+						"data": [
+							"Problem Solving (Basic)",
+							"REST API (Intermediate)",
+							"SQL (Intermediate)",
+							"System Design",
+							"Code Quality",
+							"Technical Communication",
+							"PHP (Basic)",
+							"Laravel (Basic)"
+						]
+					},
+					{
+						"name": "Back-End Developer (Node)",
+						"children": "Skills",
+						"data": [
+							"Problem Solving (Basic)",
+							"REST API (Intermediate)",
+							"SQL (Basic)",
+							"System Design",
+							"Code Quality",
+							"Technical Communication",
+							"Node (Basic)",
+							"JavaScript (Basic)"
+						]
+					},
+					{
+						"name": "Back-End Developer (Rails)",
+						"children": "Skills",
+						"data": [
+							"Problem Solving (Basic)",
+							"Ruby (Basic)",
+							"RoR (Basic)",
+							"MongoDB (Basic)",
+							"SQL (Basic)",
+							"REST API (Intermediate)",
+							"System Design",
+							"Code Quality",
+							"Technical Communication"
+						]
+					},
+					{
+						"name": "Back-End Developer (Spring Boot)",
+						"children": "Skills",
+						"data": [
+							"Problem Solving (Basic)",
+							"Java (Basic)",
+							"Sping Boot(Basic)",
+							"MongoDB (Basic)",
+							"SQL (Basic)",
+							"REST API (Intermediate)",
+							"System Design",
+							"Code Quality",
+							"Technical Communication"
+						]
+					},
+					{
+						"name": "Sr. Back-End Developer",
+						"children": "Skills",
+						"data": [
+							"Problem Solving (Intermediate)",
+							"REST API (Intermediate)",
+							"SQL (Advanced)",
+							"System Design",
+							"Code Quality",
+							"Technical Communication"
+						]
+					},
+					{
+						"name": "Sr. Back-End Developer (.NET)",
+						"children": "Skills",
+						"data": [
+							"Problem Solving (Intermediate)",
+							"C# (Intermediate)",
+							".NET (Intermediate)",
+							"SQL (Intermediate)",
+							"REST API (Intermediate)",
+							"System Design",
+							"Code Quality",
+							"Technical Communication"
+						]
+					},
+					{
+						"name": "Sr. Back-End Developer(Django)",
+						"children": "Skills",
+						"data": [
+							"Problem Solving (Intermediate)",
+							"Django (Intermediate)",
+							"Python (Intermediate)",
+							"SQL (Intermediate)",
+							"REST API (Intermediate)",
+							"System Design",
+							"Code Quality",
+							"Technical Communication"
+						]
+					},
+					{
+						"name": "Sr. Back-End Developer (Laravel)",
+						"children": "Skills",
+						"data": [
+							"Problem Solving (Intermediate)",
+							"Laravel (Intermediate)",
+							"PHP (Intermediate)",
+							"SQL (Intermediate)",
+							"REST API (Intermediate)",
+							"System Design",
+							"Code Quality",
+							"Technical Communication"
+						]
+					},
+					{
+						"name": "Sr. Back-End Developer (Node)",
+						"children": "Skills",
+						"data": [
+							"Problem Solving (Intermediate)",
+							"Node (Intermediate)",
+							"JavaScript (Intermediate)",
+							"SQL (Intermediate)",
+							"REST API (Intermediate)",
+							"System Design",
+							"Code Quality",
+							"Technical Communication"
+						]
+					},
+					{
+						"name": "Sr. Back-End Developer (Rails)",
+						"children": "Skills",
+						"data": [
+							"Problem Solving (Intermediate)",
+							"Ruby (Intermediate)",
+							"RoR (Intermediate)",
+							"MongoDB (Intermediate)",
+							"SQL (Intermediate)",
+							"REST API (Intermediate)",
+							"System Design",
+							"Code Quality",
+							"Technical Communication"
+						]
+					},
+					{
+						"name": "Sr. Back-End Developer (Spring Boot)",
+						"data": [
+							"Problem Solving (Intermediate)",
+							"Java (Intermediate)",
+							"Spring Boot (Intermediate)",
+							"MongoDB (Intermediate)",
+							"SQL (Intermediate)",
+							"REST API (Intermediate)",
+							"System Design",
+							"Code Quality",
+							"Technical Communication"
+						]
+					}
+				]
+			},
+			{
+				"name": "Front-End",
+				"type": "Role Cluster",
+				"children": "Roles",
+				"data": [
+					{
+						"name": "Front-End Developer",
+						"children": "Skills",
+						"data": [
+							"Problem Solving (Basic)",
+							"JavaScript (Basic)",
+							"CSS",
+							"HTML / CSS / JS",
+							"Code Quality",
+							"Technical Communication"
+						]
+					},
+					{
+						"name": "Front-End Developer (Angular)",
+						"children": "Skills",
+						"data": [
+							"Problem Solving (Basic)",
+							"JavaScript (Basic)",
+							"Angular (Basic)",
+							"CSS",
+							"HTML / CSS / JS",
+							"Code Quality",
+							"Technical Communication"
+						]
+					},
+					{
+						"name": "Front-End Developer (React)",
+						"children": "Skills",
+						"data": [
+							"Problem Solving (Basic)",
+							"JavaScript (Basic)",
+							"React (Basic)",
+							"CSS",
+							"HTML / CSS / JS",
+							"Code Quality",
+							"Technical Communication"
+						]
+					},
+					{
+						"name": "Front-End Developer (Vue.js)",
+						"children": "Skills",
+						"data": [
+							"Problem Solving (Basic)",
+							"JavaScript (Basic)",
+							"Vue.js(Basic)",
+							"CSS",
+							"HTML / CSS / JS",
+							"Code Quality",
+							"Technical Communication"
+						]
+					},
+					{
+						"name": "Sr. Front-End Developer",
+						"children": "Skills",
+						"data": [
+							"Problem Solving (Intermediate)",
+							"JavaScript (Intermediate)",
+							"CSS",
+							"HTML / CSS / JS",
+							"Code Quality",
+							"Technical Communication"
+						]
+					},
+					{
+						"name": "Sr. Front-End Developer (Angular)",
+						"children": "Skills",
+						"data": [
+							"Problem Solving (Intermediate)",
+							"JavaScript (Intermediate)",
+							"Angular (Intermediate)",
+							"CSS",
+							"HTML / CSS / JS",
+							"Code Quality",
+							"Technical Communication"
+						]
+					},
+					{
+						"name": "Sr. Front-End Developer (React)",
+						"children": "Skills",
+						"data": [
+							"Problem Solving (Intermediate)",
+							"JavaScript (Intermediate)",
+							"React (Intermediate)",
+							"CSS",
+							"HTML / CSS / JS",
+							"Code Quality",
+							"Technical Communication"
+						]
+					},
+					{
+						"name": "Sr. Front-End Developer (Vue.js)",
+						"children": "Skills",
+						"data": [
+							"Problem Solving (Intermediate)",
+							"JavaScript (Intermediate)",
+							"Vue,js (Basic)",
+							"CSS",
+							"HTML / CSS / JS",
+							"Code Quality",
+							"Technical Communication"
+						]
+					}
+				]
+			},
+			{
+				"name": "Full-Stack",
+				"type": "Role Cluster",
+				"children": "Roles",
+				"data": [
+					{
+						"name": "Full-Stack Engineer (Angular & Node)",
+						"children": "Skills",
+						"data": [
+							"Problem Solving (Basic)",
+							"Node (Basic)",
+							"Angular (Basic)",
+							"CSS",
+							"REST API (Intermediate)",
+							"JavaScript (Basic)",
+							"Code Quality",
+							"Technical Communication"
+						]
+					},
+					{
+						"name": "Full-Stack Engineer (React & Node)",
+						"children": "Skills",
+						"data": [
+							"Problem Solving (Basic)",
+							"Node (Basic)",
+							"React (Basic)",
+							"CSS",
+							"REST API (Intermediate)",
+							"JavaScript (Basic)",
+							"Code Quality",
+							"Technical Communication"
+						]
+					},
+					{
+						"name": "Sr. Full-Stack Engineer (Angular & Node)",
+						"children": "Skills",
+						"data": [
+							"Problem Solving (Intermediate)",
+							"Node (Intermediate)",
+							"Angular (Intermediate)",
+							"CSS",
+							"REST API (Intermediate)",
+							"JavaScript (Intermediate)",
+							"Code Quality",
+							"Technical Communication"
+						]
+					},
+					{
+						"name": "Sr. Full-Stack Engineer (React & Node)",
+						"children": "Skills",
+						"data": [
+							"Problem Solving (Intermediate)",
+							"Node (Intermediate)",
+							"React (Intermediate)",
+							"CSS",
+							"REST API (Intermediate)",
+							"JavaScript (Intermediate)",
+							"Code Quality",
+							"Technical Communication"
+						]
+					}
+				]
+			}
+		]
+	},
+	{
+		"name": "AI & ML",
+		"type": "Job Family",
+		"children": "Roles",
+		"data": [
+			{
+				"name": "Machine Learning Engineer",
+				"type": "Role",
+				"children": "Skills",
+				"data": [
+					"Python (Basic)",
+					"Applied Math",
+					"PyTorch",
+					"TensorFlow",
+					"Statistics",
+					"Machine Learning"
+				]
+			},
+			{
+				"name": "Sr. Machine Learning Engineer",
+				"type": "Role",
+				"children": "Skills",
+				"data": [
+					"Python (Intermediate)",
+					"Applied Math",
+					"PyTorch",
+					"TensorFlow",
+					"Statistics",
+					"Machine Learning"
+				]
+			}
+		]
+	},
+	{
+		"name": "Cloud",
+		"type": "Job Family",
+		"children": "Roles",
+		"data": [
+			{
+				"name": "Cloud Engineer",
+				"type": "Role",
+				"children": "Skills",
+				"data": [
+					"Azure (Basic)",
+					"AWS (Basic)",
+					"GCP (Basic)",
+					"Ansible (Basic)",
+					"Docker (Basic)",
+					"Kubernetes (Basic)",
+					"Terraform (Basic)",
+					"System Design",
+					"Technical Communication",
+					"Code Quality"
+				]
+			},
+			{
+				"name": "Cloud Engineer(AWS)",
+				"type": "Role",
+				"children": "Skills",
+				"data": [
+					"AWS (Basic)",
+					"Linux (Basic)",
+					"Docker (Basic)",
+					"Kubernetes (Basic)",
+					"Terraform (Basic)",
+					"Technical Communication"
+				]
+			},
+			{
+				"name": "Cloud Security Engineer",
+				"type": "Role",
+				"children": "Skills",
+				"data": [
+					"AWS (Basic)",
+					"AWS Security ",
+					"Network Security",
+					"Application Security",
+					"Kubernetes Security",
+					"Technical Communication "
+				]
+			},
+			{
+				"name": "Site Reliability Engineer",
+				"type": "Role",
+				"children": "Skills",
+				"data": [
+					"Ansible (Basic)",
+					"Kubernetes (Basic)",
+					"Docker (Basic)",
+					"Terraform (Basic)",
+					"Jenkins (Basic)",
+					"Linux (Basic)",
+					"CI / CD (Basic)"
+				]
+			},
+			{
+				"name": "Site Reliability Engineer",
+				"type": "Role",
+				"children": "Skills",
+				"data": [
+					"Ansible (Basic)",
+					"Kubernetes (Basic)",
+					"Docker (Basic)",
+					"Terraform (Basic)",
+					"Jenkins (Basic)",
+					"Linux (Basic)",
+					"CI / CD (Basic)"
+				]
+			},
+			{
+				"name": "Sr. Cloud Engineer",
+				"type": "Role",
+				"children": "Skills",
+				"data": [
+					"Azure (Intermediate)",
+					"AWS (Intermediate)",
+					"GCP (Intermediate)",
+					"Ansible (Intermediate)",
+					"Docker (Intermediate)",
+					"Kubernetes (Intermediate)",
+					"Terraform (Intermediate)",
+					"System Design ",
+					"Technical Communication  ",
+					"Code Quality "
+				]
+			},
+			{
+				"name": "Sr. Cloud Security Engineer",
+				"type": "Role",
+				"children": "Skills",
+				"data": [
+					"AWS (Intermediate)",
+					"AWS Security ",
+					"Network Security ",
+					"Application Security ",
+					"Kubernetes Security ",
+					"Technical Communication "
+				]
+			},
+			{
+				"name": "Sr. Site Reliability Engineer",
+				"type": "Role",
+				"children": "Skills",
+				"data": [
+					"Ansible (Intermediate)",
+					"Kubernetes (Intermediate)",
+					"Docker (Intermediate)",
+					"Terraform (Intermediate)",
+					"Jenkins (Basic)",
+					"Linux (Intermediate)",
+					"CI / CD (Basic)",
+					"Network Security "
+				]
+			}
+		]
+	},
+	{
+		"name": "Cybersecurity",
+		"type": "Job Family",
+		"children": "Roles",
+		"data": [
+			{
+				"name": "Cybersecurity Engineer",
+				"children": "Skills",
+				"data": [
+					"Network Security ",
+					"Application Security ",
+					"Linux (Basic)",
+					"Cryptography ",
+					"Technical Communication "
+				]
+			},
+			{
+				"name": "Sr. Cybersecurity Engineer",
+				"children": "Skills",
+				"data": [
+					"Network Security ",
+					"Application Security ",
+					"Linux (Intermediate)",
+					"Cryptography ",
+					"Technical Communication "
+				]
+			}
+		]
+	},
+	{
+		"name": "Data Engineering",
+		"type": "Job Family",
+		"children": "Roles",
+		"data": [
+			{
+				"name": "Data Engineer",
+				"children": "Skills",
+				"data": [
+					"Problem Solving(Basic)",
+					"Apache Spark(Basic)",
+					"SQL(Intermediate)",
+					"Hadoop(Basic)",
+					"Kafka(Basic)",
+					"System Design"
+				]
+			},
+			{
+				"name": "Data Engineer (Java Spark)",
+				"children": "Skills",
+				"data": [
+					"Apache Spark (Basic)",
+					"Java (Basic)",
+					"SQL (Intermediate)",
+					"Hadoop (Basic)",
+					"Kafka (Basic)",
+					"System Design "
+				]
+			},
+			{
+				"name": "Data Engineer (PySpark)",
+				"children": "Skills",
+				"data": [
+					"Apache Spark (Basic)",
+					"Python (Basic)",
+					"SQL (Intermediate)",
+					"Hadoop (Basic)",
+					"Kafka (Basic)",
+					"System Design "
+				]
+			},
+			{
+				"name": "Data Engineer (Scala Spark)",
+				"children": "Skills",
+				"data": [
+					"Apache Spark (Basic)",
+					"Scala (Basic)",
+					"SQL (Intermediate)",
+					"Hadoop (Basic)",
+					"Kafka (Basic)",
+					"System Design "
+				]
+			},
+			{
+				"name": "Sr. Data Engineer",
+				"children": "Skills",
+				"data": [
+					"Problem Solving (Intermediate)",
+					"Apache Spark (Intermediate)",
+					"SQL (Advanced)",
+					"Hadoop (Intermediate)",
+					"Kafka (Basic)",
+					"System Design "
+				]
+			},
+			{
+				"name": "Sr. Data Engineer (Java Spark)",
+				"children": "Skills",
+				"data": [
+					"Apache Spark (Intermediate)",
+					"Java (Intermediate)",
+					"SQL (Advanced)",
+					"Hadoop (Intermediate)",
+					"Kafka (Basic)",
+					"System Design "
+				]
+			},
+			{
+				"name": "Sr. Data Engineer (PySpark)",
+				"children": "Skills",
+				"data": [
+					"Apache Spark (Intermediate)",
+					"Python (Intermediate)",
+					"SQL (Advanced)",
+					"Hadoop (Intermediate)",
+					"Kafka (Basic)",
+					"System Design "
+				]
+			},
+			{
+				"name": "Sr. Data Engineer (Scala Spark)",
+				"children": "Skills",
+				"data": [
+					"Apache Spark (Intermediate)",
+					"Scala (Intermediate)",
+					"SQL (Advanced)",
+					"Hadoop (Intermediate)",
+					"Kafka (Basic)",
+					"System Design "
+				]
+			}
+		]
+	},
+	{
+		"name": "Data Science & Analytics",
+		"children": "Roles",
+		"type": "Job Family",
+		"data": [
+			{
+				"name": "Data Analyst",
+				"children": "Skills",
+				"data": [
+					"R (Basic)",
+					"SQL (Advanced)",
+					"Statistics ",
+					"Data Visualization ",
+					"Excel ",
+					"Power BI ",
+					"Tableau "
+				]
+			},
+			{
+				"name": "Data Analyst (Python)",
+				"children": "Skills",
+				"data": [
+					"Python (Basic)",
+					"SQL (Advanced)",
+					"Statistics ",
+					"Data Visualization ",
+					"Excel ",
+					"Power BI ",
+					"Tableau "
+				]
+			},
+			{
+				"name": "Data Analyst (R)",
+				"children": "Skills",
+				"data": [
+					"R (Basic)",
+					"SQL (Advanced)",
+					"Statistics ",
+					"Data Visualization ",
+					"Excel ",
+					"Power BI ",
+					"Tableau "
+				]
+			},
+			{
+				"name": "Data Scientist",
+				"children": "Skills",
+				"data": [
+					"Python (Basic)",
+					"SQL (Intermediate)",
+					"Data Wrangling ",
+					"Data Modeling ",
+					"Data Visualization ",
+					"Apache Spark(Basic)",
+					"R (Basic)",
+					"System Design ",
+					"Code Quality ",
+					"Technical Communication "
+				]
+			},
+			{
+				"name": "Sr. Data Analyst",
+				"children": "Skills",
+				"data": [
+					"Python (Intermediate)",
+					"R (Intermediate)",
+					"SQL (Advanced)",
+					"Statistics ",
+					"Data Visualization ",
+					"Excel ",
+					"Power BI ",
+					"Tableau ",
+					"Data Modeling "
+				]
+			},
+			{
+				"name": "Sr. Data Analyst (Python)",
+				"children": "Skills",
+				"data": [
+					"Python (Intermediate)",
+					"SQL (Advanced)",
+					"Statistics ",
+					"Data Visualization ",
+					"Excel ",
+					"Power BI ",
+					"Tableau "
+				]
+			},
+			{
+				"name": "Sr. Data Analyst (R)",
+				"children": "Skills",
+				"data": [
+					"R (Intermediate)",
+					"SQL (Advanced)",
+					"Statistics ",
+					"Data Visualization ",
+					"Excel ",
+					"Power BI ",
+					"Tableau "
+				]
+			},
+			{
+				"name": "Sr. Data Scientist",
+				"children": "Skills",
+				"data": [
+					"Python (Intermediate)",
+					"SQL (Intermediate)",
+					"Data Wrangling ",
+					"Data Modeling ",
+					"Data Visualization ",
+					"Apache Spark (Intermediate)",
+					"R (Intermediate)",
+					"System Design ",
+					"Code Quality ",
+					"Technical Communication "
+				]
+			}
+		]
+	},
+	{
+		"name": "Mobile",
+		"type": "Job Family",
+		"children": "Roles",
+		"data": [
+			{
+				"name": "Mobile Applications Developer (Android - Java)",
+				"children": "Skills",
+				"data": [
+					"Problem Solving (Basic)",
+					"Android (Basic)",
+					"Java (Basic)",
+					"REST API (Intermediate)",
+					"System Design ",
+					"Code Quality ",
+					"Technical Communication "
+				]
+			},
+			{
+				"name": "Mobile Applications Developer (Android - Kotlin)",
+				"children": "Skills",
+				"data": [
+					"Problem Solving (Basic)",
+					"Android (Basic)",
+					"Kotlin (Basic)",
+					"REST API (Intermediate)",
+					"System Design ",
+					"Code Quality ",
+					"Technical Communication "
+				]
+			},
+			{
+				"name": "Mobile Applications Developer (React Native)",
+				"children": "Skills",
+				"data": [
+					"Problem Solving (Basic)",
+					"React Native (Basic)",
+					"CSS ",
+					"REST API (Intermediate)",
+					"System Design ",
+					"TypeScript (Basic)"
+				]
+			},
+			{
+				"name": "Sr. Mobile Applications Developer (Android - Java)",
+				"children": "Skills",
+				"data": [
+					"Problem Solving (Intermediate)",
+					"Android (Intermediate)",
+					"Java (Intermediate)",
+					"REST API (Intermediate)",
+					"System Design ",
+					"Code Quality ",
+					"Technical Communication "
+				]
+			},
+			{
+				"name": "Sr. Mobile Applications Developer (Android - Kotlin)",
+				"children": "Skills",
+				"data": [
+					"Problem Solving (Intermediate)",
+					"Android (Intermediate)",
+					"Kotlin (Basic)",
+					"REST API (Intermediate)",
+					"System Design ",
+					"Code Quality ",
+					"Technical Communication "
+				]
+			},
+			{
+				"name": "Sr. Mobile Applications Developer (React Native)",
+				"children": "Skills",
+				"data": [
+					"Problem Solving (Intermediate)",
+					"React Native (Intermediate)",
+					"CSS ",
+					"REST API (Intermediate)",
+					"System Design ",
+					"TypeScript (Intermediate)"
+				]
+			}
+		]
+	},
+	{
+		"name": "Quality Assurance",
+		"children": "Roles",
+		"data": [
+			{
+				"name": "QA Engineer (Selenium)",
+				"children": "Skills",
+				"data": [
+					"Problem Solving (Basic)",
+					"Selenium (Basic)",
+					"Java (Basic)",
+					"Jenkins (Basic)",
+					"Technical Communication "
+				]
+			},
+			{
+				"name": "Quality Assurance Engineer",
+				"children": "Skills",
+				"data": [
+					"Problem Solving (Basic)",
+					"Selenium (Basic)",
+					"Technical Communication ",
+					"Software Development Methodologies ",
+					"Testing Techniques "
+				]
+			},
+			{
+				"name": "Quality Assurance Engineer (Mobile)",
+				"children": "Skills",
+				"data": [
+					"Problem Solving (Basic)",
+					"Appium",
+					"Technical Communication ",
+					"Software Development Methodologies ",
+					"Testing Techniques "
+				]
+			},
+			{
+				"name": "Sr. QA Engineer (Selenium)",
+				"children": "Skills",
+				"data": [
+					"Problem Solving (Intermediate)",
+					"Selenium (Intermediate)",
+					"Java (Intermediate)",
+					"Jenkins (Basic)",
+					"Technical Communication "
+				]
+			},
+			{
+				"name": "Sr. Quality Assurance Engineer",
+				"children": "Skills",
+				"data": [
+					"Problem Solving (Intermediate)",
+					"Selenium (Intermediate)",
+					"Technical Communication ",
+					"Software Development Methodologies ",
+					"Testing Techniques "
+				]
+			},
+			{
+				"name": "Quality Assurance Engineer (Mobile)",
+				"children": "Skills",
+				"data": [
+					"Problem Solving (Intermediate)",
+					"Appium",
+					"Technical Communication ",
+					"Software Development Methodologies ",
+					"Testing Techniques "
+				]
+			}
+		]
+	},
+	{
+		"name": "Software Engineering",
+		"children": "Roles",
+		"type": "Job Family",
+		"data": [
+			{
+				"name": "Software Engineer",
+				"children": "Skills",
+				"data": [
+					"Problem Solving (Basic)",
+					"SQL (Basic)",
+					"REST API (Intermediate)",
+					"System Design ",
+					"Code Quality ",
+					"Technical Communication "
+				]
+			},
+			{
+				"name": "Software Engineer Intern",
+				"children": "Skills",
+				"data": [
+					"Problem Solving (Basic)",
+					"SQL (Basic)",
+					"System Design ",
+					"Code Quality ",
+					"Technical Communication "
+				]
+			},
+			{
+				"name": "Sr. Software Engineer",
+				"children": "Skills",
+				"data": [
+					"Problem Solving (Intermediate)",
+					"SQL (Intermediate)",
+					"REST API (Intermediate)",
+					"System Design ",
+					"Code Quality ",
+					"Technical Communication "
+				]
+			}
+		]
+	}
+]

@@ -1,125 +1,106 @@
 import './App.css';
-import Bubble from './bubble.js';
-import React, { Suspense, useEffect } from 'react';
-import positions from "./positions.json"
+import Bubble from './components/Bubbles/bubble.js';
+import React, { Suspense } from 'react';
+import positions from "./data/positions.json"
 import Status from './components/Status/Status';
-import ReactDOM from 'react-dom'
+import Explore from './components/Explore/Explore';
+import jobFamilies from "./data/job_families.json"
+
+const getData = (content) => {
+	return content
+}
 
 function App() {
-	const skillList = ["Communication", "Programming", "DSA"]
 	const [i, setI] = React.useState(0);
 	const [activeBubble, setActiveBubble] = React.useState(null);
-	const [fade, setFade] = React.useState(false)
 	const [skills, setSkills] = React.useState(null)
+	const [selected, setSelected] = React.useState(null)
+	const [depth, setDepth] = React.useState([])
+	const [itemList, setIteamList] = React.useState(getData(jobFamilies));
+	const [itemPosistions] = React.useState(positions)
+	const [type, setType] = React.useState(jobFamilies[0].children)
+	const [childNumber, setChildNumber] = React.useState(jobFamilies[0].data.length)
+
+	const updateItems = (content) => {
+		if (itemList[0].children === "Skills") {
+			return
+		}
+		setActiveBubble(null)
+		setIteamList(itemList.find(item => item.name === content).data)
+		setDepth([...depth, itemList.findIndex(item => item.name === content)])
+		setSelected(content)
+		setI(i + 1)
+		setType(itemList.find(item => item.name === content).children)
+		if (type === 'Skills') {
+			console.log("content: ", itemList.find(item => item.name === content).data)
+			setSkills(itemList.find(item => item.name === content).data)
+		}
+	}
+
 	const goBack = () => {
 		setActiveBubble(null)
 		setIteamList([])
 		setSelected(null)
-		setItemPositions(positions)
-		setTimeout(() => setIteamList(list), 100)
-		setSkills(null)
+		setTimeout(() => {
+			let data = jobFamilies
+			depth.pop()
+			depth.forEach(index => {
+				data = jobFamilies[index].data
+				setSelected(jobFamilies[index].name)
+			})
+			setIteamList(data)
+			setType(null)
+			setSkills([])
+		}, 100)
 	}
 
-	const list = [
-		"Data Engineering",
-		"Software Engineering",
-		"Web Development",
-		"Quality Assurance",
-		"Data Science &Analytics",
-		"Cloud",
-		"AI & ML",
-		"Android"
-	]
-
-	const [selected, setSelected] = React.useState(null);
-
-	const list1 = [
-		"E",
-		"F",
-		"G",
-		"H",
-		"I"
-	]
-
-	const [itemList, setIteamList] = React.useState(list);
-	const [itemPosistions, setItemPositions] = React.useState(positions)
-	const updateItems = (content) => {
-		setActiveBubble(null)
-		setIteamList([])
-		setSkills([...skillList])
-		setItemPositions(positions.map(value => ({ value, sort: Math.random() }))
-		.sort((a, b) => a.sort - b.sort)
-		.map(({ value }) => value))
-		setSelected(content)
-		setIteamList(list1)
-		setI(i + 1)
-		setFade(true)
+	const setTooltipContent = (content) => {
+		if (content === 'back')
+			return
+		const tooltipItem = itemList.find(item => item.name === content)
+		setType(tooltipItem.children)
+		setActiveBubble(content)
+		setChildNumber(tooltipItem.data.length)
+		if (type === "Skills") {
+			setSkills(tooltipItem.data)
+		}
 	}
 
-
-	return ReactDOM.createPortal (
-		<div>
-			<div key={i} className="bubble-container" >
-				<Suspense fallback={<div>Loading...</div>}>
-					<img src="./box.png" width="417px" height="335px" style={{
-						position: "absolute",
-						left: "180px",
-						top: "133px",
-						zIndex: "2"
-					}} />
-					<Status status={{ jobFamilies: 10, skills: 9, roles: 7 }} />
-					{
-						// positions.map((position, index) => {
-						// 	return (
-						// 		<Bubble
-						// 			key={index}
-						// 			left={position.left}
-						// 			top={position.top}
-						// 		/>
-						// 	)
-						// })
-						itemList.map((item, index) => {
-							const zIndex = list.length - index;
-							return (
-								<Bubble
-									fade={fade}
-									className="fade-in-animation"
-									key={index}
-									left={itemPosistions[index].left}
-									top={itemPosistions[index].top}
-									updateItems={updateItems}
-									content={item}
-									style={{ zIndex: zIndex }}
-									activeBubble={activeBubble}
-									setActiveBubble={setActiveBubble}
-									skills={skills}
-									/>
-							)
-						})
-					}
-					{selected?<Bubble
-						key={itemList.length}
-						left="2vw"
-						top="45vh"
-						updateItems={goBack}
-						content={selected}
-						type="back"
-					/>:null}
-				</Suspense>
-			</div>
-			<code
-				style={
-					{
-						height: "100vh",
-						width: "100vw",
-						backgroundColor: "white",
-						zIndex: "4",
-						position: "absolute"
-					}
+	return (
+		<div key={i} className="bubble-container" >
+			<Suspense fallback={<div>Loading...</div>}>
+				<Explore/>
+				<Status status={{ jobFamilies: 10, skills: 9, roles: 7 }} />
+				{
+					itemList.map((item, index) => {
+						return (
+							<Bubble
+								className="fade-in-animation"
+								key={index}
+								left={itemPosistions[index].left}
+								top={itemPosistions[index].top}
+								updateItems={updateItems}
+								content={item.name}
+								activeBubble={activeBubble}
+								setActiveBubble={setActiveBubble}
+								skills={skills}
+								childNumber={childNumber}
+								tooltipType={type}
+								setTooltipContent={setTooltipContent}
+							/>
+						)
+					})
 				}
-			>{selected}</code>
-		</div>,
-		document.getElementById('portal')
+				{selected ? <Bubble
+					key={itemList.length}
+					left="2vw"
+					top="45vh"
+					updateItems={goBack}
+					content={selected}
+					type="back"
+				/> : null}
+			</Suspense>
+		</div>
 	);
 }
 
