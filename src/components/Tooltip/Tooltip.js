@@ -1,19 +1,18 @@
-import React, { Suspense } from "react"
+import React from "react"
 import "./Tooltip.css"
 
-const Skills = ({ show, skills }) => {
+const Skills = ({ show, skills, childNumber, type, position }) => {
 	return (
-		<div className={`${show ? 'show' : 'hide'}`}>
-			<div className={`dialogue-triangle slide-up ${show ? 'show' : 'hide'}`}></div>
-			<div className={`tooltip slide-up ${show ? 'show' : 'hide'}`}>
-				<p style={{ color: 'red' }}>{show}</p>
+		<div className={`${position === '85vw' ? 'tooltip-wrap-left' : 'tooltip-wrap'} ${show ? 'show' : 'hide'}`}>
+			<div className={`${position === '85vw' ? 'dialogue-triangle-left' : 'dialogue-triangle'} slide-up`}></div>
+			<div style={type === 'Skills' ? { width: '15vw' } : { width:'10vw'}} className={`tooltip slide-up`}>
 				<h2>
 					<strong>
-						100
+						{type === "Skills" ? null : childNumber}
 					</strong>
 				</h2>
 				<p>
-					Skills
+					{type}
 				</p>
 				{
 					skills &&

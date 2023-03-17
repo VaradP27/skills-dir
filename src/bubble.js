@@ -1,10 +1,12 @@
 import React from 'react';
 import './bubble.css';
 import Tooltip from "./components/Tooltip/Tooltip"
-function Bubble({ left, top, content, updateItems, type, activeBubble, setActiveBubble, fade, skills }) {
+function Bubble({ left, top, content, updateItems, type, activeBubble, setActiveBubble, fade, skills, childNumber, tooltipType, setTooltipContent }) {
 	const [show, setShow] = React.useState(false)
 
-	React.useEffect(() => setShow(activeBubble === content), [activeBubble, content])
+	React.useEffect(() => {
+		setShow(activeBubble === content)
+	}, [activeBubble, content])
 
 
 	return (
@@ -12,39 +14,21 @@ function Bubble({ left, top, content, updateItems, type, activeBubble, setActive
 			type === 'back?' ? {} : { left, top }
 		}
 
-		
-		className={`${type === 'back' ? 'back-bubble' : ''} bubble  fade-in-animation ${activeBubble?(activeBubble === content ? '' : 'blur'):null} ${fade?'fade-out-animation':null}}`}
-			onMouseOver={() => setActiveBubble(content)}
+
+			className={`${type === 'back' ? 'back-bubble' : ''} bubble  fade-in-animation ${activeBubble ? (activeBubble === content ? '' : 'blur') : null} ${fade ? 'fade-out-animation' : null}}`}
+			onMouseOver={() => setTooltipContent(content)}
 			onMouseOut={() => setActiveBubble(null)}
 
 
 			onClick={() => updateItems(content)}>
-			{
-				<a href="https://google.com">
-					{content}
-				</a>
-			}
-			{type === 'back'?<button
-				style={{
-					height: '52px',
-					width: '52px',
-					textAlign: 'center',
-					margin: '10px',
-					border: '1px solid white',
-					backgroundColor: '#4E4E4E',
-					borderRadius: '50%',
-					color: 'grey',
-					marginTop: '30px',
 
-				}}
+			{content}
+			{type === 'back' ? <button
+				className="back-button"
 			>
-				<p  style={{
-					color: 'white',
-				}}>
-					{"<"}
-				</p>
+				<img src="./assets/back.svg" alt="back button" />
 			</button> : null}
-			<Tooltip skills={skills} show={show} />
+			<Tooltip skills={skills} show={show} childNumber={childNumber} type={tooltipType} position={left} />
 		</div>
 	);
 }

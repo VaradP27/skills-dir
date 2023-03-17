@@ -1,0 +1,55 @@
+.explore-wrapper {
+	width: 20vw;
+	position: absolute;
+	left: 7vw;
+	top: 20vh;
+	z-index: 2;
+	background-color: white;
+	border: 1.5px solid rgba(78, 78, 78, 0.5);
+	border-radius: 8px;
+	padding: 30px;
+}
+
+.explore-title {
+
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 32px;
+	line-height: 120%;
+	color: #0E141E;
+}
+
+.explore-text {
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 150%;
+	color: #2D2D35;
+	opacity: 0.8;
+	margin-bottom: 5vh;
+}
+
+.explore-link {
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 150%;
+	height: 50px;
+	color: #068932 !important;
+	border: solid 2px #068932;
+	border-radius: 3px;
+	padding: 10px 20px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+.explore-icon{
+	margin-left: 10px;
+	position: relative;
+	top: 4px;
+}
