@@ -1,6 +1,6 @@
 import './App.css';
 import Bubble from './components/Bubbles/bubble.js';
-import React, { Suspense } from 'react';
+import { Suspense, useState } from 'react';
 import positions from "./data/positions.json"
 import Status from './components/Status/Status';
 import Explore from './components/Explore/Explore';
@@ -11,15 +11,15 @@ const getData = (content) => {
 }
 
 function App() {
-	const [i, setI] = React.useState(0);
-	const [activeBubble, setActiveBubble] = React.useState(null);
-	const [skills, setSkills] = React.useState(null)
-	const [selected, setSelected] = React.useState(null)
-	const [depth, setDepth] = React.useState([])
-	const [itemList, setIteamList] = React.useState(getData(jobFamilies));
-	const [itemPosistions] = React.useState(positions)
-	const [type, setType] = React.useState(jobFamilies[0].children)
-	const [childNumber, setChildNumber] = React.useState(jobFamilies[0].data.length)
+	const [i, setI] = useState(0);
+	const [activeBubble, setActiveBubble] = useState(null);
+	const [skills, setSkills] = useState(null)
+	const [selected, setSelected] = useState(null)
+	const [depth, setDepth] = useState([])
+	const [itemList, setIteamList] = useState(getData(jobFamilies));
+	const [itemPosistions] = useState(positions)
+	const [type, setType] = useState(jobFamilies[0].children)
+	const [childNumber, setChildNumber] = useState(jobFamilies[0].data.length)
 
 	const updateItems = (content) => {
 		if (itemList[0].children === "Skills") {
@@ -31,10 +31,6 @@ function App() {
 		setSelected(content)
 		setI(i + 1)
 		setType(itemList.find(item => item.name === content).children)
-		if (type === 'Skills') {
-			console.log("content: ", itemList.find(item => item.name === content).data)
-			setSkills(itemList.find(item => item.name === content).data)
-		}
 	}
 
 	const goBack = () => {

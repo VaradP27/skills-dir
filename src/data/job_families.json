@@ -476,20 +476,6 @@
 				]
 			},
 			{
-				"name": "Site Reliability Engineer",
-				"type": "Role",
-				"children": "Skills",
-				"data": [
-					"Ansible (Basic)",
-					"Kubernetes (Basic)",
-					"Docker (Basic)",
-					"Terraform (Basic)",
-					"Jenkins (Basic)",
-					"Linux (Basic)",
-					"CI / CD (Basic)"
-				]
-			},
-			{
 				"name": "Sr. Cloud Engineer",
 				"type": "Role",
 				"children": "Skills",
@@ -930,7 +916,7 @@
 				]
 			},
 			{
-				"name": "Quality Assurance Engineer (Mobile)",
+				"name": "Sr. Quality Assurance Engineer (Mobile)",
 				"children": "Skills",
 				"data": [
 					"Problem Solving (Intermediate)",

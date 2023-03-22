@@ -1,10 +1,10 @@
-import React from 'react';
+import {useState, useEffect} from 'react';
 import './bubble.css';
 import Tooltip from "../Tooltip/Tooltip"
 function Bubble({ left, top, content, updateItems, type, activeBubble, setActiveBubble, fade, skills, childNumber, tooltipType, setTooltipContent }) {
-	const [show, setShow] = React.useState(false)
+	const [show, setShow] = useState(false)
 
-	React.useEffect(() => {
+	useEffect(() => {
 		setShow(activeBubble === content)
 	}, [activeBubble, content])
 
@@ -17,7 +17,7 @@ function Bubble({ left, top, content, updateItems, type, activeBubble, setActive
 			onMouseOver={() => setTooltipContent(content)}
 			onMouseOut={() => setActiveBubble(null)}
 			onClick={() => updateItems(content)}>
-			{content}
+			<span className="bubble-text">{content}</span>
 			{type === 'back' ? <button
 				className="back-button"
 			>
