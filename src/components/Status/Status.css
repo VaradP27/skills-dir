@@ -1,12 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
 .status{
-	top: 10vh;
-	left: 20vw;
 	color: white;
-	position: absolute;
-	left: 68vw;
-	top: 133px;
 	display: grid;
 	grid-template-columns: repeat(3, 150px);
 	text-align: center;

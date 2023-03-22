@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
 .bubble-container {
 	height: 80vh;
 	width: 100vw;
@@ -6,7 +7,16 @@
 	margin-top: 10vh;
 }
 
-a{
+a {
 	text-decoration: none;
 	color: white;
+}
+
+.top-right-wrapper {
+	position: absolute;
+	top: 13vh;
+	right: 4vw;
+	align-items: center;
+	justify-content: center;
+	display: flex;	
 }
