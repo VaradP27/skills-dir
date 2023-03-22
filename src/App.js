@@ -5,13 +5,13 @@ import positions from "./data/positions.json"
 import Status from './components/Status/Status';
 import Explore from './components/Explore/Explore';
 import jobFamilies from "./data/job_families.json"
+import CloseButton from "./components/CloseButton/CloseButton"
 
 const getData = (content) => {
 	return content
 }
 
 function App() {
-	const [i, setI] = useState(0);
 	const [activeBubble, setActiveBubble] = useState(null);
 	const [skills, setSkills] = useState(null)
 	const [selected, setSelected] = useState(null)
@@ -25,12 +25,14 @@ function App() {
 		if (itemList[0].children === "Skills") {
 			return
 		}
+		setIteamList([])
 		setActiveBubble(null)
-		setIteamList(itemList.find(item => item.name === content).data)
-		setDepth([...depth, itemList.findIndex(item => item.name === content)])
-		setSelected(content)
-		setI(i + 1)
-		setType(itemList.find(item => item.name === content).children)
+		setTimeout(() => {
+			setIteamList(itemList.find(item => item.name === content).data)
+			setDepth([...depth, itemList.findIndex(item => item.name === content)])
+			setSelected(content)
+			setType(itemList.find(item => item.name === content).children)
+		}, 100)
 	}
 
 	const goBack = () => {
@@ -54,19 +56,38 @@ function App() {
 		if (content === 'back')
 			return
 		const tooltipItem = itemList.find(item => item.name === content)
+		console.log(tooltipItem)
+		if (tooltipItem.children === "Skills") {
+			setSkills(tooltipItem.data)
+		}
 		setType(tooltipItem.children)
 		setActiveBubble(content)
 		setChildNumber(tooltipItem.data.length)
-		if (type === "Skills") {
-			setSkills(tooltipItem.data)
-		}
+	}
+
+	const closeAction = () => {
+		setIteamList([])
+		setTimeout(() => {
+			setActiveBubble(null)
+			setIteamList(jobFamilies)
+			setType(null)
+			setSkills([])
+			setDepth([])
+			setSelected(null)
+		})
 	}
 
 	return (
-		<div key={i} className="bubble-container" >
+		<div className="bubble-container" >
 			<Suspense fallback={<div>Loading...</div>}>
-				<Explore/>
-				<Status status={{ jobFamilies: 10, skills: 9, roles: 7 }} />
+				<Explore />
+				<div className="top-right-wrapper">
+					{depth.length === 0 ?
+						<Status status={{ jobFamilies: 9, skills: 97, roles: 69 }} />
+						:
+						<CloseButton closeAction={closeAction} />
+					}
+				</div>
 				{
 					itemList.map((item, index) => {
 						return (
