@@ -3,9 +3,9 @@ import "./Tooltip.css"
 
 const Skills = ({ show, skills, childNumber, type, position }) => {
 	return (
-		<div className={`${position === '85vw' ? 'tooltip-wrap-left' : 'tooltip-wrap'} ${show ? 'show' : 'hide'}`}>
-			<div className={`${position === '85vw' ? 'dialogue-triangle-left' : 'dialogue-triangle'} slide-up`}></div>
-			<div style={type === 'Skills' ? { width: '15vw' } : { width:'10vw'}} className={`tooltip slide-up`}>
+		<div key={skills} className={`${position === '85vw' || position === '86vw' ? 'tooltip-wrap-left' : 'tooltip-wrap'} ${show ? 'show' : 'hide'}`}>
+			<div className={`${position === '85vw' || position==='86vw' ? 'dialogue-triangle-left' : 'dialogue-triangle'} slide-up`}></div>
+			<div style={type === 'Skills' ? { width: '15vw' } : { width: '10vw' }} className={`tooltip slide-up`}>
 				<h2>
 					<strong>
 						{type === "Skills" ? null : childNumber}
