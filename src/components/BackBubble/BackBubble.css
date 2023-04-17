@@ -1,0 +1,38 @@
+.back-bubble:hover {
+	z-index: 0 !important;
+}
+
+.back-bubble {
+	position: absolute;
+	bottom: 5vh;
+	left: 5vw;
+	height: 20vw;
+	width: 20vw;
+	background-color: "red";
+	border-radius: 50%;
+	font-size: 1.5vh;
+	color: #E8FEED;
+	text-align: center;
+	background-color: #202020;
+	font-family: 'Open Sans', sans-serif;
+	line-height: 21.8px;
+	font-weight: 600;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	z-index: 0 !important;
+}
+
+.back-button {
+	height: 52px;
+	width: 52px;
+	text-align: center;
+	margin: 10px;
+	border: 1px solid white;
+	background-color: #4E4E4E;
+	border-radius: 50%;
+	color: grey;
+	margin-top: 30px;
+}

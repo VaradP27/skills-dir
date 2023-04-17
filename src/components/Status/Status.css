@@ -3,7 +3,7 @@
 .status{
 	color: white;
 	display: grid;
-	grid-template-columns: repeat(3, 150px);
+	grid-template-columns: repeat(3, 10vw);
 	text-align: center;
 }
 
@@ -19,7 +19,7 @@
 }
 
 .status-number {
-	font-size: 36px;
+	font-size: 4vh;
 	font-weight: 700;
 	line-height: 43.2px;
 	font-family: 'Open Sans', sans-serif;

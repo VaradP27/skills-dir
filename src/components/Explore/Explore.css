@@ -1,21 +1,24 @@
 .explore-wrapper {
-	width: 20vw;
 	position: absolute;
-	left: 7vw;
+	max-width: 30vw;
+	width: 20vw;
+	height: auto;
 	top: 20vh;
 	z-index: 2;
 	background-color: white;
-	border: 1.5px solid rgba(78, 78, 78, 0.5);
+	border: 1.5px solid green;
 	border-radius: 8px;
-	padding: 30px;
+	padding: 3vh;
+	justify-content: center;
+	align-items: center;
+	margin-left: 2vw;
 }
 
 .explore-title {
-
 	font-family: 'Open Sans';
 	font-style: normal;
 	font-weight: 600;
-	font-size: 32px;
+	font-size: 1.8vw;
 	line-height: 120%;
 	color: #0E141E;
 }
@@ -24,24 +27,24 @@
 	font-family: 'Open Sans';
 	font-style: normal;
 	font-weight: 400;
-	font-size: 14px;
+	font-size: 0.8vw;
 	line-height: 150%;
 	color: #2D2D35;
 	opacity: 0.8;
-	margin-bottom: 5vh;
+	margin-bottom: 3vh;
 }
 
 .explore-link {
 	font-family: 'Open Sans';
 	font-style: normal;
 	font-weight: 700;
-	font-size: 14px;
+	font-size: 0.8vw;
 	line-height: 150%;
-	height: 50px;
+	height: 5vh;
 	color: #068932 !important;
 	border: solid 2px #068932;
 	border-radius: 3px;
-	padding: 10px 20px;
+	padding: 1vh 1vw;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
@@ -49,7 +52,7 @@
 }
 
 .explore-icon{
-	margin-left: 10px;
+	margin-left: 0.1vw;
 	position: relative;
 	top: 4px;
 }

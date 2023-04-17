@@ -212,6 +212,42 @@
 				"children": "Roles",
 				"data": [
 					{
+						"name": "Front-End Developer1",
+						"children": "Skills",
+						"data": [
+							"Problem Solving (Basic)",
+							"JavaScript (Basic)",
+							"CSS",
+							"HTML / CSS / JS",
+							"Code Quality",
+							"Technical Communication"
+						]
+					},
+					{
+						"name": "Front-End Developer2",
+						"children": "Skills",
+						"data": [
+							"Problem Solving (Basic)",
+							"JavaScript (Basic)",
+							"CSS",
+							"HTML / CSS / JS",
+							"Code Quality",
+							"Technical Communication"
+						]
+					},
+					{
+						"name": "Front-End Developer3",
+						"children": "Skills",
+						"data": [
+							"Problem Solving (Basic)",
+							"JavaScript (Basic)",
+							"CSS",
+							"HTML / CSS / JS",
+							"Code Quality",
+							"Technical Communication"
+						]
+					},
+					{
 						"name": "Front-End Developer",
 						"children": "Skills",
 						"data": [

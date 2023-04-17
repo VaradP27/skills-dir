@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
-.bubble-container {
+.main-container {
 	height: 80vh;
 	width: 100vw;
 	background-color: #191819;
 	margin-top: 10vh;
+	display: flex;
+	flex-direction: row;
 }
 
 a {
@@ -12,11 +14,26 @@ a {
 	color: white;
 }
 
-.top-right-wrapper {
-	position: absolute;
-	top: 13vh;
-	right: 4vw;
-	align-items: center;
-	justify-content: center;
+.top-wrapper {
+	height: 10vh;
 	display: flex;	
+	align-items: right;
+	justify-content: right;
+	padding-top: 1vh;
+	width: 70vw;
+}
+
+.left-wrapper{
+	height: 100%;
+	width: 30vw;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.bubble-container{
+	height: 70vh;
+	position: relative;
+	left: 0px;
+	top: 0px;
 }

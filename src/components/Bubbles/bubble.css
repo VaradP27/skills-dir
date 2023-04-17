@@ -1,120 +1,57 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
 .bubble {
-	position: absolute;
-	height: 150px;
-	width: 150px;
-	border-radius: 50%;
-	transition: all 0.3s ease;
-	font-size: 14px;
+	border-radius: 100%;
 	color: #E8FEED;
 	text-align: center;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background-color: #202020;
+	border: 1px solid #4e4e4e;
+	background: #3a3a3a;
 	font-family: 'Open Sans', sans-serif;
-	line-height: 21.8px;
 	font-weight: 600;
-}
-
-@media screen and (min-width: 720px) {
-	.bubble {
-		width: 100px;
-		height: 100px;
-	}
-}
-
-.fade-in-animation {
-	animation: fadeIn 1s;
-}
-
-@keyframes fadeIn {
-	0% {
-		transform: scale(0.5, 0.5)
-	}
-
-
-	100% {
-		transform: scale(1, 1)
-	}
-}
-
-.fade-out-animation {
-	animation: fadeIn 3s;
-}
-
-@keyframes fadeOut {
-	0% {
-		transform: scale(1, 1)
-	}
-
-
-	100% {
-		transform: scale(1.2, 1.2)
-	}
-}
-
-
-
-@media screen and (min-width: 1600px) {
-	.bubble {
-		width: 160px;
-		height: 160px
-	}
+	margin: 10px;
 }
 
 .bubble:hover {
 	cursor: pointer;
-	transform: scale(1.1);
-	outline: 2px dashed green;
-	outline-offset: 5px;
-	z-index: 10 !important;
-	font-size: 16px;
-}
-
-.back-bubble:hover {
-	z-index: 0 !important;
-}
-
-.back-bubble {
-	position: absolute;
-	height: 500px;
-	width: 500px;
-	background-color: "red";
-	border-radius: 50%;
-	font-size: 16px;
-	color: #E8FEED;
-	text-align: center;
-	background-color: #202020;
-	font-family: 'Open Sans', sans-serif;
-	line-height: 21.8px;
-	font-weight: 600;
-	overflow: hidden;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	transition: all 0.3s ease;
-	z-index: 0 !important;
 }
 
 .blur {
-	filter: blur(0px);
+	animation: lowOpacity 0.1s;
+	opacity: 0.5;
 }
 
-.back-button {
-	height: 52px;
-	width: 52px;
-	text-align: center;
-	margin: 10px;
-	border: 1px solid white;
-	background-color: #4E4E4E;
-	border-radius: 50%;
-	color: grey;
-	margin-top: 30px;
-}
-
-.bubble-text{
+.bubble-text {
 	padding: 20px;
+}
+
+.bubble-container-inner {
+	position: absolute;
+	background: transparent;
+	border-radius: 999px;
+	transition: 0.2s padding linear, 0.2s border linear;
+	border: 0 dashed green;
+	width: fit-content;
+	animation: testAnimation 0.5s;
+}
+
+.bubble-container-inner:hover {
+	border-width: 3px;
+	z-index: 2;
+}
+
+/*
+zoom from click location on load animation
+*/
+
+@keyframes testAnimation {
+	0%{
+		transform: translate(0px, 0px) scale(0);
+	}
+	100%{
+		
+	}
+	
 }

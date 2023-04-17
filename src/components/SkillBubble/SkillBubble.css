@@ -1,0 +1,20 @@
+.skillBubble {
+	padding: 10px;
+	background: transparent;
+	color: white;
+	border: 2px dashed #4e4e4e;
+	display: flex;
+	border-radius: 20px;
+	position: absolute;
+}
+
+.skillBubble h6 {
+	margin: 0;
+}
+
+.greendot {
+	width: 10px;
+	height: 10px;
+	display: inline-block;
+	border-radius: 50%;
+}
