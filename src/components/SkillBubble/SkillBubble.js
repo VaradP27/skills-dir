@@ -1,11 +1,12 @@
+import React from "react";
 import "./SkillBubble.css";
 
-function SkillBubble() {
-  return (
-	<div className="SkillBubble">
-	  <h1>SkillBubble Component</h1>
-	</div>
-  );
+export function SkillBubble({ skill, style, description = "" }) {
+	return (
+		<div className="skillBubble" style={style}>
+			<div>
+				<h6>{skill}</h6>
+			</div>
+		</div>
+	);
 }
-
-export default SkillBubble;

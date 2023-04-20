@@ -9,6 +9,7 @@
 
 .close-icon {
 	margin-right: 10px;
+	width: 1.5vh;
 }
 
 .close-button {
@@ -16,9 +17,16 @@
 	margin: 2vh 5vw;
 	width: 8vw;
 	height: 6vh;
+	min-height: 3vw;
+	min-width: fit-content;
 	background: #FFFFFF;
 	border: 1.5px solid #4E4E4E;
 	box-shadow: inset 0px 0px 12px rgba(0, 0, 0, 0.25);
-	border-radius: 132px;
+	border-radius: 999px;
 	text-align: center;
+	padding: 10px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
 }

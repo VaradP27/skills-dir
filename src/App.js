@@ -41,6 +41,7 @@ function App() {
 		setActiveBubble(null)
 		setIteamList([])
 		setSelected(null)
+		setSkills(null)
 		setTimeout(() => {
 			let data = jobFamilies
 			depth.pop()
@@ -50,7 +51,6 @@ function App() {
 			})
 			setIteamList(data)
 			setType(null)
-			setSkills([])
 		}, 100)
 	}
 
@@ -98,7 +98,7 @@ function App() {
 						<Status status={{ jobFamilies: 9, skills: 97, roles: 69 }} />
 						:
 						<CloseButton closeAction={closeAction} />
-					}
+						}
 				</div>
 				<div className='bubble-container'>
 					{
