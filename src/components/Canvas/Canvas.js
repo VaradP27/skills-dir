@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import "./Canvas.css";
 
-export function Canvas({ width, height, style, skills, position }) {
+export function Canvas({ width, height, style, skill, position }) {
 	const ref = useRef(null);
 
 	useEffect(() => {
@@ -12,10 +12,12 @@ export function Canvas({ width, height, style, skills, position }) {
 		ctx.setLineDash([5, 5]);
 		ctx.lineWidth = 2;
 
-		for (let i = 0; i < skills && i < position.length; i++) {
-			ctx.moveTo(...position[i].canvasPosition);
-			ctx.bezierCurveTo(...position[i].curvePosition);
-		}
+		// for (let i = 0; i < skills && i < position.length; i++) {
+		// 	ctx.moveTo(...position[i].canvasPosition);
+		// 	ctx.bezierCurveTo(...position[i].curvePosition);
+		// }
+			ctx.moveTo(...position);
+			ctx.bezierCurveTo(...skill);
 		// ctx.moveTo(100, 100);
 		// ctx.bezierCurveTo(50, 10, 150, 60, 100, -10);
 		// ctx.moveTo(20, 50);
@@ -36,8 +38,8 @@ export function Canvas({ width, height, style, skills, position }) {
 		<canvas
 			ref={ref}
 			style={style}
-			width={width}
 			height={height}
+			width={width}
 			className="canvasElement"
 		>
 		</canvas>
